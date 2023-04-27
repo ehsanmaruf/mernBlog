@@ -21,7 +21,7 @@ const AddBlog = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post("http://localhost:6060/api/blog/add", {
+      .post("https://blogify-xcai.onrender.com/api/blog/add", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageURL,

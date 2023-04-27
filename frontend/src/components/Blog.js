@@ -22,7 +22,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
   };
   const deleteRequest = async () => {
     const res = await axios
-      .delete(`http://localhost:6060/api/blog/${id}`)
+      .delete(`https://blogify-xcai.onrender.com/api/blog/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
